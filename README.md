@@ -1,7 +1,6 @@
 # Joint-relay-selection-beam-management
 
 Source code for the joint relay and mode selection problem. We describe the usage of the code in three steps.
-First two steps require the files under /MATLAB, and the third requires the files under /Python.
 
 #######DISTRIBUTION REQUIREMENTS########
 Tested on Tensorflow 1.15.2, Python 3.6 and Matlab R2019a
@@ -26,6 +25,6 @@ Obtain tau_mode, tau_relay by running 'best_threshold_exhaustive_search.m'
 --related files: SE_compute.m, beam_sweep.m, best_threshold_exhaustive_search.m
 
 (ii) Learning-based relay and mode selection
-copy the channel generated in step (i) under the directory /Python.
+copy the channel generated in step (i).
 run 'conversion_MATLAB_channel_to_Python_p.py' to generate the .p files used in the python codes.
 run 'get_policy_and_model.py' to use the customGym enviroment, representing the threshold learning DRL algorithm. 
